@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        table tr th {
+            min-width: 150px;
+        }
+    </style>
+</head>
+<body>
+<table id="table" border="1" cellspacing="0" cellpadding="4"
+       style="table-layout: fixed; word-break: break-all; word-wrap: break-word;">
+    <tr>
+        <th width="150px">环境</th>
+        <td style="text-align: center">${ env }</td>
+    </tr>
+    <tr>
+        <th>机器</th>
+        <td style="text-align: center">${ ip }</td>
+    </tr>
+    <tr>
+        <th>线程</th>
+        <td style="text-align: center">${ thread }</td>
+    </tr>
+    <tr>
+        <th>时间</th>
+        <td style="text-align: center">${ time }</td>
+    </tr>
+    <tr>
+        <th>地点</th>
+        <td style="text-align: center">${ place }</td>
+    </tr>
+    <tr>
+        <th>操作人</th>
+        <td style="text-align: center">${ operator }</td>
+    </tr>
+    <tr>
+        <th>额外信息</th>
+        <td style="text-align: justify;    text-justify: inter-ideograph;">
+            ${ extra }
+        </td>
+    </tr>
+    <tr>
+        <th>错误信息</th>
+        <td style="text-align: center">${ errorMessage }</td>
+    </tr>
+    <tr>
+        <td colspan="2"
+            style="background-color:rgba(0,0,0,0.1);color: green; font-size: 14px; padding: 15px 0 15px 15px;">
+            ${ stash }
+        </td>
+    </tr>
+</table>
+<hr style="width: 100%; height: 1px;" color="#b5c4df" size="1" align="left">
+<div style="font-size: 14px;font-family: 'lucida Grande', Verdana,serif;">
+    <span>${ bottom }</span>
+</div>
+</body>
+</html>
